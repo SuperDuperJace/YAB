@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:700);
+
+body {
+    overflow: hidden;
+    padding-top: 5em;
+    background-color: #ffffff;
+    perspective: 5000px;
+}
+
+.cube {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    font-family: 'Arimo', sans-serif;
+    font-size: 33px;
+    line-height: 100px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    background-color: black;
+    transition: transform .33s;
+    transform-style: preserve-3d;
+}
+
+.cube:hover,
+.cube:active{
+    transform: rotateX(90deg);
+}
+
+.front,
+.bottom {
+    height: 100px;
+}
+
+.front {
+    background-color: black;
+    transform: translateZ(50px);
+}
+
+.bottom {
+    background-color: black;
+    transform: rotateX(-90deg) translateZ(-50px);
+}
